@@ -76,18 +76,18 @@
 
 // ------------------------------------------------------------------------------------------------------------
 
-let userAnswer = prompt("Введите страну");
+let userAnswer = prompt('Введите страну');
 
-let userСountry = userAnswer[0].toUpperCase() + userAnswer.substring(1);
-
-const china = "китай";
-const chile = "чили";
-const australia = "австралия ";
-const india = "индия";
-const jamaica = "ямайка";
+let userСountry = userAnswer.toLowerCase();
+let country = userСountry[0].toUpperCase() + userСountry.substring(1);
+const china = 'Китай';
+const chile = 'Чили';
+const australia = 'Австралия ';
+const india = 'Индия';
+const jamaica = 'Ямайка';
 let cost;
 
-switch (userСountry) {
+switch (country) {
   case china:
     cost = 100;
     console.log(`Доставка в ${china} будет стоить ${cost} кредитов`);
@@ -114,7 +114,7 @@ switch (userСountry) {
     break;
 
   default:
-    console.log("В вашей стране доставка не доступна");
+    console.log('В вашей стране доставка не доступна');
 }
 
 // ---------------------------------------------------------------------------------------------------
