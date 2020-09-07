@@ -6,15 +6,6 @@ const quantityDroid = prompt("Какое кол-во Вы хотите купи�
 const totalPrice = pricePerDroid * quantityDroid;
 const newCredits = credits - totalPrice;
 
-// if (!quantityDroid) {
-//   console.log("Отменено пользователем!");
-// } else if (newCredits < 0) {
-//   console.log("Недостаточно средств на счету!");
-// } else if (newCredits >= 0) {
-//   console.log(
-//     `Вы купили ${quantityDroid} дроидов, на счету осталось ${newCredits} кредитов.`
-//   );
-// }
 
 if (!quantityDroid) {
   console.log("Отменено пользователем!");
